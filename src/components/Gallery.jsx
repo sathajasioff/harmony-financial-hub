@@ -28,7 +28,7 @@ const defaultImages = [
 ];
 
 const Gallery = () => {
-  const [images, setImages] = useState<Array<{ id: number; url: string; title: string; date: string }>>(defaultImages);
+  const [images, setImages] = useState(defaultImages);
   const [isVisible, setIsVisible] = useState(false);
 
   // Intersection Observer for animation
@@ -55,7 +55,7 @@ const Gallery = () => {
     };
   }, []);
 
-  const handleRemoveImage = (id: number) => {
+  const handleRemoveImage = (id) => {
     setImages(images.filter(img => img.id !== id));
   };
 
