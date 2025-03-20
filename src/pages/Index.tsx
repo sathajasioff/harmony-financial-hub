@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import LoanCalculator from '@/components/LoanCalculator';
+import Gallery from '@/components/Gallery';
 import AboutUs from '@/components/AboutUs';
 import Footer from '@/components/Footer';
 
@@ -40,7 +41,10 @@ const Index = () => {
       
       <main>
         <Hero />
-        <LoanCalculator />
+        <div className="container mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <LoanCalculator />
+          <Gallery />
+        </div>
         <AboutUs />
       </main>
       
