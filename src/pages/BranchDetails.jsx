@@ -37,7 +37,7 @@ const BranchDetails = () => {
     }
   };
   
-  const branch = location ? branchInfo[location as keyof typeof branchInfo] : null;
+  const branch = location ? branchInfo[location] : null;
   
   return (
     <div className="min-h-screen bg-white">

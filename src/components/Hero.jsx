@@ -74,7 +74,7 @@ const Hero = () => {
   );
 };
 
-const StatCard = ({ title, value }: { title: string, value: string }) => (
+const StatCard = ({ title, value }) => (
   <div className="flex flex-col items-center text-center">
     <div className="text-3xl md:text-4xl font-display font-bold text-gray-900">{value}</div>
     <p className="text-sm text-gray-600 mt-2">{title}</p>
